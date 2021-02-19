@@ -1,71 +1,97 @@
 html {
-    background-color: #02040F; 
     font-family: 'Nunito Sans', sans-serif;
+    background-color: #02040F; 
 }
 p {
-    color: #02040F;
     font-family: 'Newsreader', serif;
+    color: #02040F;
 }
 header {
     background-color: #002642;
     color: #E5DADA;
-    padding: 1rem;
-    font-size: 20px;
+    padding:    .5rem;
+    padding-left:  2rem;
+    font-size: 20px;    
+    margin-bottom: 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
 }
 h2 {
     background-color: #002642;
     color: #E5DADA;
     padding: 1rem;
 }
-
+h3{
+    font-size: 30px;
+    padding-left: 1rem;
+}
+section {
+    position: absolute;
+    top: 200px ;
+    width: 100%;
+}
 article {
     background-color: #E5DADA;
-    width: fit-content;
     padding: 1rem;
-    margin-top: 1rem;
+    width: 700px;
 }
 ul {
     padding: 0;
     list-style-type: none;
 }
-.nav1 {
+img {
+    width: 500px;
+    float: left;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.nav {
+    background-color: #002642;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    top:    100px;
+    z-index: 1;
+  }
+.nav a {
+    float: left;
+    color: #E5DADA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav a:hover {
+    background-color: #E5DADA;
+    color: #02040F;
+}
+.nav a.active {
+    background-color: #E59500;
+    color: #E5DADA;
+}
+.box {
     background-color: #E59500;
     padding: 1rem;
-    margin: 1rem;
-    width: max-content;
-}
-.li_nav {
-    display: inline;
-}
-.button1 {
-    background-color: #002642;
-    color: #E5DADA;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-    width: 10rem;
-}
-.button2 {
-    background-color: #002642;
-    color: #E5DADA;
-    padding: 1rem;
-    text-align: center;
-    text-decoration: none;
-}
-.box1 {
-    background-color: #E59500;
-    padding: 1rem;
+    padding-right: 1rem;
     margin: 1rem;
     width: fit-content;
+    min-height: 250px;
 }
-.li_box1 {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    width: 10rem;
+.box a {
+    text-decoration: none;
+    color: #E5DADA;
 }
-.box2 {
-    background-color: #E59500;
-    padding: 1rem;
-    margin: 1rem;
-    width: min-content;
+.box a.button {
+    background-color: #002642;
+    float: left;
+    padding: 15px 120px;
+    width: 90px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.box a:hover {
+    background-color: #E5DADA;
+    color: #02040F
 }
